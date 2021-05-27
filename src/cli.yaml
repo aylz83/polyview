@@ -1,0 +1,21 @@
+name: polyview
+version: "0.1-alpha"
+author: Eilidh Ward <eilidh.l.ward@gmail.com>>
+about: An alignment viewer written in Rust, making use of notcurses
+args:
+    - primary:
+        short: p
+        long: primary
+        value_name: gene
+        about: Sets the primary sequence to compare against
+        takes_value: true
+    - SOURCE:
+        about: Sets the input file to use
+        value_name: FILE
+        required: true
+        index: 1
+    - verbose:
+        short: v
+        multiple: true
+        about: Sets the level of verbosity
+
